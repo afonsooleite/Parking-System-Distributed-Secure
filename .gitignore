@@ -1,10 +1,36 @@
-# Byte-compiled / optimized / DLL files
+# Python ignores
 __pycache__/
 *.py[cod]
 *$py.class
 
-# C extensions
-*.so
+# Distribution / packaging
+build/
+dist/
+eggs/
+*.egg-info/
+.installed.cfg
+
+# Virtual environments
+venv/
+ENV/
+env/
+
+# Logs
+*.log
+
+# IDE settings
+.idea/
+.vscode/
+*.iml
+
+# Security
+*.pem
+*.key
+*.crt
+
+# System files
+.DS_Store
+Thumbs.db
 
 # Distribution / packaging
 .Python
