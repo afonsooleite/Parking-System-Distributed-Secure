@@ -14,8 +14,8 @@ O sistema suporta:
 
 ## 📌 Fases de Implementação
 
-| Fase | Funcionalidade | Estado |
-|------|----------------|--------|
+| Fase | Funcionalidade |
+|------|----------------|
 | 1 | TCP: comunicação Lugar ↔ Parque (threads e protocolo)
 | 2 | API REST: /parque, /info, /custo  
 | 3 | Cliente Web dinâmico (atualização da lista de parques)  
