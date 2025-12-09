@@ -21,7 +21,7 @@ O sistema suporta:
 | 3 | Cliente Web dinâmico (atualização da lista de parques)  
 | 4 | Segurança: RSA + Certificados + Assinaturas digitais 
 
-> Ciclo de vida conforme o enunciado FSD2025/26 — Fases 1–4 :contentReference[oaicite:0]{index=0}
+> Ciclo de vida conforme o enunciado FSD2025/26 — Fases 1–4 
 
 ---
 
@@ -37,16 +37,11 @@ O sistema suporta:
 ---
 
 ## Segurança (Fase 4)
-
-Implementado de acordo com as especificações do enunciado:
-
 ### Certificados
 
 - RSA Key Pair gerado pelo Parque na inicialização
 - Parque regista chave pública no Gestor via `/parque_certificado`
 - Gestor devolve **certificado digital em PEM** codificado em UTF-8
-
-Referência: requisitos de certificação e endpoints (pág. 9 do enunciado) :contentReference[oaicite:1]{index=1}
 
 ---
 
@@ -58,16 +53,12 @@ Referência: requisitos de certificação e endpoints (pág. 9 do enunciado) :co
 - Assinatura enviada em JSON usando codificação **cp437**
 - Certificado sempre enviado no corpo de resposta
 
-Referência: Regras completas de assinaturas (pág. 11) :contentReference[oaicite:2]{index=2}
-
 Endpoints seguros:
 
 | URL | Método | Descrição |
 |-----|--------|-----------|
 | `/secure/info` | GET | Lista informações + certificado + assinatura |
 | `/secure/custo?tempo=X` | GET | Assina o valor calculado |
-
-Referência: tabela de endpoints seguros (pág. 10) :contentReference[oaicite:3]{index=3}
 
 ---
 
